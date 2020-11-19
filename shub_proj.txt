@@ -1,0 +1,40 @@
+CREATE TABLE employee (id int(10) NOT NULL AUTO_INCREMENT,name varchar(30) DEFAULT NULL,gender varchar(30) DEFAULT NULL,address varchar(30) DEFAULT NULL,state varchar(30) DEFAULT NULL,city varchar(30) DEFAULT NULL,email varchar(30) DEFAULT NULL,phone varchar(30) DEFAULT NULL,PRIMARY KEY (id)) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+
+
+insert into employee values('1','Harshada','Female',"Pimpri","Maharashatra","Pune",'harshada.p@gmail.com',"9960821099");
+
+insert into employee values('2','Shreya','Female',"Navi peth","Maharashatra","Solapur",'shreya.s@gmail.com',"9960729099");
+
+insert into employee values('3','Shubham','Male',"Baner","Maharashatra","Pune",'shubham.c@gmail.com',"9075849101");
+
+insert into employee values('4','Harsh','Male',"Mohite Nagar","Maharashatra","Hydrabad",'harsh.k@gmail.com',"9561849101");
+
+CREATE TABLE login (username varchar(30) DEFAULT NULL,password varchar(30) DEFAULT NULL) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+insert into login values("shreya","shr9960");
+
+insert into login values("Harsh","harsh9561");
+
+
+CREATE TABLE salary (id int(10) DEFAULT NULL,hra decimal(12,2) DEFAULT NULL,da decimal(12,2) DEFAULT NULL,med decimal(12,2) DEFAULT NULL,pf decimal(12,2) DEFAULT NULL,basic_salary decimal(12,2) DEFAULT NULL) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+insert into salary values('1','6000','2000','800','1200','25000');
+
+insert into salary values('2','4000','3000','700','1000','24000');
+
+insert into salary values('3','5000','6000','900','1300','26000');
+
+insert into salary values('4','3000','1000','750','1270','25700');
+
+
+DELETE FROM tutorials_tbl WHERE tutorial_id=3;
+
+
+Detailed Info:
+DB name = college;
+use college;
+attendence1;
+employee;
+salary;
+login;
